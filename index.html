@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Easy M3U Playlist Creator v1.1.0</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-frame">
+        <h1>Easy M3U Playlist Creator v1.1.0</h1>
+        <div class="input-row">
+            <label for="channel_name">Channel Name:</label>
+            <input type="text" id="channel_name">
+            <label for="group_title">Group Title:</label>
+            <input type="text" id="group_title">
+        </div>
+        <div class="input-row">
+            <label for="tvg_name">EPG TVG Name:</label>
+            <input type="text" id="tvg_name">
+            <label for="tvg_shift">EPG TVG Shift:</label>
+            <select id="tvg_shift">
+                <option value=""></option>
+                <option value="-12">-12</option>
+                <!-- Add other options as needed -->
+                <option value="12">12</option>
+            </select>
+        </div>
+        <div class="input-row">
+            <label for="tvg_id">EPG TVG ID:</label>
+            <input type="text" id="tvg_id">
+            <label for="logo_link">Logo Link:</label>
+            <input type="text" id="logo_link">
+        </div>
+        <div class="input-row">
+            <label for="channel_link">Channel Link:</label>
+            <input type="text" id="channel_link">
+            <label for="manifest_type">Manifest Type:</label>
+            <select id="manifest_type">
+                <option value=""></option>
+                <option value="hls">hls</option>
+                <!-- Add other options as needed -->
+                <option value="mp4">mp4</option>
+            </select>
+        </div>
+        <div class="input-row">
+            <label for="license_key">License Key:</label>
+            <input type="text" id="license_key">
+            <label for="license_type">License Type:</label>
+            <select id="license_type">
+                <option value=""></option>
+                <option value="clearkey">clearkey</option>
+                <!-- Add other options as needed -->
+                <option value="org.w3.clearkey">org.w3.clearkey</option>
+            </select>
+        </div>
+        <div class="button-row">
+            <button id="add_channel">Add Channel</button>
+            <button id="clear_fields" class="red-button">CLEAR</button>
+        </div>
+    </div>
+
+    <textarea id="channel_info" readonly></textarea>
+    <div id="channel_count">Channels Added: 0</div>
+    <button id="generate_m3u">Generate M3U</button>
+    <div class="button-row">
+        <button id="buy_coffee" class="orange-button">Buy me a coffee</button>
+        <button id="check_updates" class="black-button">Check for updates on Github.com</button>
+    </div>
+    <div class="signature">Discord: @bigwolf_</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
